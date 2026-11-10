@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-heading: 'Cinzel', serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color-scheme: light;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  ::selection {
+    background-color: #d4af37;
+    color: #070e1c;
+  }
+}
+
+.font-heading {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.5);
+}
+
+/* Gold shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 40%, #e2b755 70%, #d4af37 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heritage-border-gold {
+  border-color: rgba(212, 175, 55, 0.28);
+}
+

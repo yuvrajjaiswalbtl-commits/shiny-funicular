@@ -1,0 +1,6 @@
+{
+  "name": "Annapurna Heritage Restaurant & Banquet",
+  "description": "Premier fine dining and luxury banquet venue at Hotel Atithi International in Siddharthanagar, Lumbini Province.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
